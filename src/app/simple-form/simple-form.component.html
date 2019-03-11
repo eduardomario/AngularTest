@@ -1,0 +1,21 @@
+<div class="example-container">
+  <mat-form-field>
+    <input matInput placeholder="Nombre">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Apellido Paterno">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="Apellido Materno">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="Nivel" [(value)]="idNivel">
+      <mat-option *ngFor="let nivel of niveles" [value]="nivel.id">{{nivel.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <span>{{idNivel}}</span>
+</div>
